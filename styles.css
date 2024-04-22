@@ -2,6 +2,7 @@
 
 *{
     background-color: brown;
+    
 }
 
 *{
@@ -17,6 +18,8 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 nav {
@@ -40,10 +43,203 @@ li {
 }
 
 li:hover {
-    color: blue;
+    color: rgb(248, 203, 58);
 }
 
 #logo {
     width: 150px;
     height: auto;
+}
+
+#banner {
+    background-image: url('https://images7.alphacoders.com/134/1340752.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: azure;
+    font-size: 19px;
+    font-family: 'kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: yellow;
+    color: rgb(255, 0, 0);
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    outline: none;
+    margin-top: 25px;
+
+}
+
+.button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: azure;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+
+.card:hover {
+    transform:scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://s2-techtudo.glbimg.com/QMEFf3Zls-_v6MrH-uSQhV9bETM=/0x0:1500x1000/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/5/2/JhbDZXSN67wjcAqFLALQ/robert-pattinson-811119484f574723885b5bfbb109f749.jpg');
+}
+
+.banner-2 {
+    background-image: url('https://ogimg.infoglobo.com.br/in/25422676-086-2d9/FT1086A/batman_ver22_xlg.jpg');
+}
+
+.banner-3 {
+    background-image: url('https://scontent.fvag4-1.fna.fbcdn.net/v/t1.6435-9/106789351_3218060234882632_4838943886492302844_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=2wth_HVuuOYAb40i4HE&_nc_oc=AdgLUqN_198r6GJB0NX4fxCg_abxk0KzeX1DHwQcbEO7P6PsT649FVRL3C-uCeO0hMI&_nc_ht=scontent.fvag4-1.fna&oh=00_AfCp0i50I91xd713Z_OrIBUaqmmTj_lSS4fAkn5LnUK38Q&oe=664D0E72');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: azure;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }    
+
+    #banner {
+        background-position: 60%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height:  700px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: -50px;
+    }
+
 }

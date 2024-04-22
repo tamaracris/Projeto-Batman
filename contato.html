@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles-contato.css">
 </head>
 <body>
-    contato
+
+      
+    <header>
+        <img id="logo" src="./Imagens/logo.png">
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+
+        </nav>
+
+
+    </header>
+
+
+
+    <header>
+    <div class="formularioContato">
+        
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <label>
+                <span><i class="icon icon-user-1"></i> Nome</span>
+                <input type="text" name="nome" required="">
+            </label>
+            
+            <label>
+                <span><i class="icon icon-email"></i> E-mail</span>
+                <input type="text" name="email" class="fade_8S">
+            </label>
+
+            <label>
+                <span><i class="icon icon-flag"></i> Assunto</span>
+                <input type="text" name="assunto" required="">
+            </label>
+            
+            <label>
+                <span><i class="icon icon-comment"></i> Mensagem</span>
+                 <textarea name="mensagem" rows="3" required=""></textarea> 
+            </label>
+           
+            <input type="hidden" name="acao" value="enviar" />
+            <button class="btn-envia" title="Enviar"><b class="icon icon-paper-plane-o"> Enviar</b></button>
+
+        
+        </form>
+
+    </div><!--Formulario Contato-->
+</header>
+
+
 </body>
 </html>
